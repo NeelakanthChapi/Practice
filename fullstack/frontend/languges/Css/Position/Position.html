@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <style>
         #root{
             width: 100%;
@@ -16,18 +17,56 @@
             top: 0%;
             
         }
+        #abc{
+            position: static;
+  border: 5px solid #73AD21;
+        }
+        #xyz{
+            position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+        }
+        #def{
+            position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+        }
     </style>
+    
     <div id="root"></div>
+    <h1>The position Property</h1>
+    <h2>Position:- Static;</h2>
+    <p>HTML elements are positioned static by default.</p>
+    <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+    
+
+    <div id="abc">Static</div>
+    <h1>Position:- Fixed;</h1>
+    <div id="xyz">Fixed</div>
+    <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+
+    <h1>Position: Sticky;</h1>
+    <p>An element with position: sticky; is positioned based on the user's scroll position.</p>
+    <div id="def">Sticky</div>
+
+
+
+
+
+
+
+
+
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex blanditiis facere iusto ipsum voluptatum possimus delectus labore voluptates velit suscipit fugiat sed, asperiores quia. Blanditiis expedita corrupti adipisci officiis suscipit.
         Fugiat, perferendis dignissimos pariatur quas debitis ratione neque deleniti consectetur consequatur facere, illum quos porro illo, libero ullam odit nisi totam ducimus iste laudantium? Quas, quibusdam. Quod suscipit magni modi?
         Consectetur sapiente soluta minima at, illo nostrum tempora rem repellat aperiam ipsam excepturi fuga minus, magnam aut natus sequi veniam nemo sunt quam dicta harum corrupti iure! Perspiciatis, quas fugit.
         Quisquam eum, vero odio voluptate porro, esse ratione repellendus harum sapiente dignissimos nulla dolorem impedit aspernatur accusamus? Perferendis sequi sint nam ipsum! Blanditiis, eligendi autem quibusdam atque voluptatum nesciunt sit!
-        Repellat doloribus consequuntur in quae commodi magni deleniti voluptas sequi quia facere, aperiam nulla mollitia impedit omnis, vero laudantium, eaque ea corrupti quos ullam autem voluptatum eius! Error, recusandae omnis.
-        Rem vel, quod doloribus commodi nemo atque minus necessitatibus debitis eum aliquam blanditiis, id nesciunt ex ipsam. Corrupti, corporis, nobis assumenda porro asperiores voluptas iure magni magnam voluptate, eveniet minima?
-        Dolorem deserunt, porro officia accusamus delectus, ullam corrupti, dolorum eius voluptas expedita molestias rerum repellendus fuga cum nihil atque fugit qui quidem. Voluptates minima facere eum cupiditate ratione officiis sequi!
-        Asperiores laborum quasi vero soluta sapiente? Eum natus aspernatur praesentium cumque, fugit molestiae! Distinctio, quaerat eius autem sapiente impedit, labore reiciendis facere veniam amet provident qui quibusdam dicta minus adipisci?
-        Accusamus iste maxime repellendus libero officia at, aut iure repellat sapiente doloremque reiciendis ipsum praesentium quos nulla amet itaque animi, velit, voluptatum ipsa nostrum quaerat perferendis. Ullam doloribus ab amet?
-        Sint temporibus perspiciatis quia tenetur est maxime magni, eos impedit nisi obcaecati, harum dolorem nesciunt ipsa nobis repellendus id enim consectetur? Itaque ea nisi maxime dolor quidem minima natus culparrupti adipisci officiis suscipit.
+        Repellat doloribus consequuntur in quae commodi magni deleniti voluptas sequi quia facere, aperiam nulla mollitia impedit omnis, vero laudantium, eaque ea corrupti quos ullam autem voluptatum eius! ndus id enim consectetur? Itaque ea nisi maxime dolor quidem minima natus culparrupti adipisci officiis suscipit.
         Fugiat, perferendis dignissimos pariatur quas debitis ratione neque deleniti consectetur consequatur facere, illum quos porro illo, libero ullam odit nisi totam ducimus iste laudantium? Quas, quibusdam. Quod suscipit magni modi?
         Consectetur sapiente soluta minima at, illo nostrum tempora rem repellat aperiam ipsam excepturi fuga minus, magnam aut natus sequi veniam nemo sunt quam dicta harum corrupti iure! Perspiciatis, quas fugit.
         Quisquam eum, vero odio voluptate porro, esse ratione repellendus harum sapiente dignissimos nulla dolorem impedit aspernatur accusamus? Perferendis sequi sint nam ipsum! Blanditiis, eligendi autem quibusdam atque voluptatum nesciunt sit!
@@ -50,12 +89,6 @@
         Sint temporibus perspiciatis quia tenetur est maxime magni, eos impedit nisi obcaecati, harum dolorem nesciunt ipsa nobis repellendus id enim consectetur? Itaque ea nisi maxime dolor quidem minima natus culparrupti adipisci officiis suscipit.
         Fugiat, perferendis dignissimos pariatur quas debitis ratione neque deleniti consectetur consequatur facere, illum quos porro illo, libero ullam odit nisi totam ducimus iste laudantium? Quas, quibusdam. Quod suscipit magni modi?
         Consectetur sapiente soluta minima at, illo nostrum tempora rem repellat aperiam ipsam excepturi fuga minus, magnam aut natus sequi veniam nemo sunt quam dicta harum corrupti iure! Perspiciatis, quas fugit.
-        Quisquam eum, vero odio voluptate porro, esse ratione repellendus harum sapiente dignissimos nulla dolorem impedit aspernatur accusamus? Perferendis sequi sint nam ipsum! Blanditiis, eligendi autem quibusdam atque voluptatum nesciunt sit!
-        Repellat doloribus consequuntur in quae commodi magni deleniti voluptas sequi quia facere, aperiam nulla mollitia impedit omnis, vero laudantium, eaque ea corrupti quos ullam autem voluptatum eius! Error, recusandae omnis.
-        Rem vel, quod doloribus commodi nemo atque minus necessitatibus debitis eum aliquam blanditiis, id nesciunt ex ipsam. Corrupti, corporis, nobis assumenda porro asperiores voluptas iure magni magnam voluptate, eveniet minima?
-        Dolorem deserunt, porro officia accusamus delectus, ullam corrupti, dolorum eius voluptas expedita molestias rerum repellendus fuga cum nihil atque fugit qui quidem. Voluptates minima facere eum cupiditate ratione officiis sequi!
-        Asperiores laborum quasi vero soluta sapiente? Eum natus aspernatur praesentium cumque, fugit molestiae! Distinctio, quaerat eius autem sapiente impedit, labore reiciendis facere veniam amet provident qui quibusdam dicta minus adipisci?
-        Accusamus iste maxime repellendus libero officia at, aut iure repellat sapiente doloremque reiciendis ipsum praesentium quos nulla amet itaque animi, velit, voluptatum ipsa nostrum quaerat perferendis. Ullam doloribus ab amet?
-        Sint temporibus perspiciatis quia tenetur est maxime magni, eos impedit nisi obcaecati, harum dolorem nesciunt ipsa nobis repellendus id enim consectetur? Itaque ea nisi maxime dolor quidem minima natus !</p>
+        Quisquam eum, vero odio voluptate nesciunt ipsa nobis repellendus id enim consectetur? Itaque ea nisi maxime dolor quidem minima natus !</p>
 </body>
 </html>
