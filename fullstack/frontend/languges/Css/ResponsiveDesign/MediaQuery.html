@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .abc{
+            font-size: 40px;
+            color: red;
+            background-color: white;
+            display: none;
+        }
+        @media( max-width:300px){
+            #root1{
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media ( min-width:301px) and (max-width:500px){
+            #root2{
+                display: block;
+                color: blue;
+            }
+        }
+        @media ( min-width:501px) and (max-width:900px){
+            #root3{
+                display: block;
+                color: brown;
+            }
+
+        }
+        @media ( min-width:901px){
+            #root4{
+                display: block;
+                color: crimson;
+            }
+        }
+
+    </style>
+    <div id="root1" class="abc">device name small devices szife of 0px to 300px</div>
+    <div id="root2" class="abc">device name Tabs szife of 301px to 500px</div>
+    <div id="root3" class="abc">device name Desktop szife of 501px to 900px</div>
+    <div id="root4" class="abc">device name Tv szife of 901px to --px</div>
+</body>
+</html>
