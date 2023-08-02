@@ -11,12 +11,19 @@
             display: grid;
             /* grid-template-columns: 200px 200px 200px 200px;
             grid-template-rows: 200px 200px; */
+         
             /* grid-template-rows: repeat(4,200px);
         grid-template-columns: repeat(3,200px); */
+       
         /* grid-template-rows: repeat(3,200px);
         grid-template-columns: repeat(3,1fr); */
+       
         grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
         grid-template-rows: repeat(3,200px);
+        height: 200px;
+        border: 2px solid black;
+        margin: 50px;
+        
 
            
             
@@ -28,8 +35,41 @@
             margin: 50px;
         }
         }
+        .container1{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px; */
+         
+            /* grid-template-rows: repeat(4,200px);
+        grid-template-columns: repeat(3,200px); */
+       
+        grid-template-rows: repeat(3,200px);
+        grid-template-columns: repeat(3,1fr); 
+        height: 400px;
+        border: 2px solid black;
+        margin: 50px;
+
+        .abc{
+            background-color: beige;
+            color: brown;
+            font-size: 30px;
+            border: 2px solid black;
+            margin: 50px;
+        }
+        }  
     </style>
+    <h1>Grid</h1>
+    <p>Many web pages are based on a grid-view, which means that the page is divided into columns:</p>
+    <p>Using a grid-view is very helpful when designing web pages. It makes it easier to place elements on the page</p>
+    <p>A responsive grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window.</p>
     <div class="container">
+        <div id="root1" class="abc"></div>
+        <div id="root2" class="abc"></div>
+        <div id="root3" class="abc"></div>
+        <div id="root4" class="abc"></div>
+        <div id="root5" class="abc"></div>
+    </div>
+    <div class="container1">
         <div id="root1" class="abc"></div>
         <div id="root2" class="abc"></div>
         <div id="root3" class="abc"></div>
