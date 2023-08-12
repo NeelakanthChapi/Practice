@@ -1,1 +1,1 @@
-let mony:Number=500000
+let money:Number=500000
