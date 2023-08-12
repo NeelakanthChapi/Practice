@@ -10,6 +10,6 @@ var Human = /** @class */ (function () {
     };
     return Human;
 }());
-var teju = new Human();
-teju;
-console.log(teju);
+var Neel = new Human();
+Neel;
+console.log(Neel);

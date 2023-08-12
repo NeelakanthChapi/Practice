@@ -15,6 +15,6 @@ class Human{
 
 }
 
-let teju=new Human()
-teju
-console.log(teju)
+let Neel=new Human()
+Neel
+console.log(Neel)
