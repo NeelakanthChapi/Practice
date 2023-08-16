@@ -1,0 +1,19 @@
+<h1>IIfe</h1>
+<p>It is a JavaScript function that runs as soon as it defined. An IIFE (Immediately Invoked Function Expression) <br>can be used for avoiding the variable hoisting from within the blocks. It allows the public access to methods <br>while retaining the privacy for variables defined in the function.</p>
+<p>IIFE is a design pattern that is also known as the Self-Executing Anonymous Function. It contains two major parts:</p>
+<p>1.The first part is the anonymous function having a lexical scope, which is enclosed within the Grouping operator ().</p>
+<p>2.The second part creates the IIFE by which the JavaScript engine will interpret the function directly.</p>
+
+
+
+
+<script>
+    console.log(1234)
+    function abc(){
+        console.log(12345)
+    }
+   // abc()
+    (()=>{
+        console.log(12345)
+    })()
+</script> 
