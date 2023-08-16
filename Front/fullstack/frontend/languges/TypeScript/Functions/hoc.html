@@ -1,0 +1,39 @@
+<h1>Hoc</h1>
+<p>HOC stands for Higher-Order Components.
+    It means a component which takes in another component and returns an enhanced component.</p>
+    <p>const HoC = Component => EnhancedComponent</p>
+    <p>The primary use case of HOC is to have a single place to sharing functionalities between components.</p>
+    <p>The primary use case of HOC is to have a single place to sharing functionalities between components.</p>
+
+
+
+
+
+<input type="number" value="0"  id="num">
+<button onclick="caller()">click me</button>
+<script>
+    let dOER=(a,b,opration)=>{
+        if(opration =="+"){
+   return a + b
+        }
+        if(opration =="-"){
+   return a - b
+        }
+        if(opration =="*"){
+   return a - b
+        }
+        if(opration =="/"){
+   return a - b
+        }
+     
+    }
+    function calculator(op,doer){
+        let data=document.getElementById('num').value
+        console.log(data)
+            console.log(doer(4,6,op))        }
+
+    function caller(){
+        calculator("-",dOER)
+    }
+   
+</script>
