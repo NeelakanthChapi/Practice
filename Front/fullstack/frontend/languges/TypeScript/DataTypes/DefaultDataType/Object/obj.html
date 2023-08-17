@@ -1,0 +1,22 @@
+<h1>Objects</h1>
+<p>A javaScript object is an entity having state and behavior (properties and method). <br>For example: car, pen, bike, chair, glass, keyboard, monitor etc</p>
+<p>JavaScript is an object-based language. Everything is an object in JavaScript.
+
+   <br> JavaScript is template based not class based. Here, we don't create class to get the object. But, we direct create objects.</p>
+
+
+
+
+
+<script>
+    let myitem={name:'t-shirt',color:'red',size:"xl",prize:300,image:''}
+let  arry=[
+    {name:'t-shirt',color:'red',size:"xl"},{name:'t-shirt',color:'green',size:"xl"},{name:'t-shirt',color:'blue',size:"xl"},
+    {name:'shirt',color:'blue',size:"xl"},
+]
+    console.log(arry)
+    let data=arry.find((val)=>{return val.color=='green'})
+    console.log(data)
+    let data1=arry.filter((val)=>{return val.name=='t-shirt'})
+    console.log(data1)
+</script>
