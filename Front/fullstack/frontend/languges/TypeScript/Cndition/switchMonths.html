@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Switch</h1>
+       <p>1.The switch expression is evaluated once.
+          <br>2.The value of the expression is compared with the values of each case.
+          <br>3.If there is a match, the associated block of code is executed.
+          <br>4.If there is no match, the default code block is executed.</p>
+        <h2>Guessing Months</h2>
+        <h2 id="show"></h2>
+        <button onclick="randomNumberGenerator()">click to generate Months</button>
+    </center>
+ 
+    <script>
+
+        function randomNumberGenerator(){
+let num=Math.floor(Math.random()*11+1)
+
+           let h2= document.getElementById('show')
+          
+            switch(num){
+                case 1:
+                h2.innerHTML= "January"
+                break;
+                case 2:
+                h2.innerHTML= "February"
+                break;
+                case 3:
+                h2.innerHTML= "March"
+                break;
+                case 4:
+                h2.innerHTML= "April"
+                break;
+                case 5:
+                h2.innerHTML= "May"
+                break;
+                case 6:
+                h2.innerHTML= "June"
+                break;
+                case 7:
+                h2.innerHTML= "July"
+                break;
+                case 8:
+                h2.innerHTML= "August"
+                break;
+                case 9:
+                h2.innerHTML= "September"
+                break;
+                case 10:
+                h2.innerHTML= "October"
+                break;
+                case 11:
+                h2.innerHTML= "November"
+                break;
+                case 12:
+                h2.innerHTML= "December"
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

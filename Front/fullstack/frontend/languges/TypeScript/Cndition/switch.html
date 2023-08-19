@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Switch</h1>
+       <p>1.The switch expression is evaluated once.
+          <br>2.The value of the expression is compared with the values of each case.
+          <br>3.If there is a match, the associated block of code is executed.
+          <br>4.If there is no match, the default code block is executed.</p>
+        <h2>Guessing Days</h2>
+        <h2 id="show"></h2>
+        <button onclick="randomNumberGenerator()">click to generate days</button>
+    </center>
+ 
+    <script>
+
+        function randomNumberGenerator(){
+let num=Math.floor(Math.random()*7+1)
+
+           let h2= document.getElementById('show')
+          
+            switch(num){
+                case 1:
+                h2.innerHTML= "Monday"
+                break;
+                case 2:
+                h2.innerHTML= "Tusday"
+                break;
+                case 3:
+                h2.innerHTML= "Wednesday"
+                break;
+                case 4:
+                h2.innerHTML= "Thirsday"
+                break;
+                case 5:
+                h2.innerHTML= "Friday"
+                break;
+                case 6:
+                h2.innerHTML= "Saturday"
+                break;
+                case 7:
+                h2.innerHTML= "Sunday"
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
