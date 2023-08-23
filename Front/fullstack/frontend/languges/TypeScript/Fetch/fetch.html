@@ -1,0 +1,38 @@
+<script>
+
+   let apiData= fetch('https://fakestoreapi.com/products')
+   apiData= apiData.then((data)=>{return data.json()})
+             apiData.then((d)=>{console.log(d)})
+   //console.log(apiData)
+
+//   async function apicaller(){
+//     let apiData1= fetch('https://fakestoreapi.com/products')
+//  apiData1=await (await apiData1).json()
+//    console.log(apiData1)
+//    }
+//    apicaller()
+
+   async function apicaller1(){
+    let apiData1= fetch('https://data.covid19india.org/data.json')
+ apiData1=await (await apiData1).json()
+   console.log(apiData1)
+   }
+   apicaller1()
+
+   async function apicaller(){
+    let apiData= fetch('https://jsonplaceholder.typicode.com/comments')
+ apiData=await (await apiData).json()
+   console.log(apiData)
+   }
+   apicaller()
+
+   async function apicaller(){
+    let apiData= fetch('https://jsonplaceholder.typicode.com/photos')
+ apiData=await (await apiData).json()
+   console.log(apiData)
+   }
+   apicaller()
+
+
+
+</script>
