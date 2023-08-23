@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub User Info</title>
+</head>
+<body>
+    <button id="fetchUserButton">Fetch User Info</button>
+    <div id="userInfo"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const fetchButton = document.getElementById("fetchUserButton");
+            fetchButton.addEventListener("click", fetchUserInfo);
+        });
+
+        function fetchUserInfo() {
+            const apiUrl = "https://api.github.com/users/mojombo"; // GitHub user API URL
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(user => {
+                    displayUserInfo(user);
+                })
+                .catch(error => console.error("API call error:", error));
+        }
+
+        function displayUserInfo(user) {
+            const userInfoContainer = document.getElementById("userInfo");
+            userInfoContainer.innerHTML = ""; // Clear existing data
+
+            const userAvatar = document.createElement("img");
+            userAvatar.src ='https://avatars.githubusercontent.com/u/1?v=4';
+            userAvatar.alt = user.login;
+
+            const userName = document.createElement("h2");
+            userName.textContent = user.login;
+
+            const userHtmlUrl = document.createElement("a");
+            userHtmlUrl.href = 'https://github.com/mojombo';
+            userHtmlUrl.textContent = "GitHub Profile";
+
+            userInfoContainer.appendChild(userAvatar);
+            userInfoContainer.appendChild(userName);
+            userInfoContainer.appendChild(userHtmlUrl);
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Data</title>
+</head>
+<body>
+    <button id="fetchUserDataButton">Fetch User Data</button>
+    <div id="userDataContainer"></div>
+   
+   
+   
+   <script>document.addEventListener("DOMContentLoaded", function() {
+        const fetchUserDataButton = document.getElementById("fetchUserDataButton");
+        const userDataContainer = document.getElementById("userDataContainer");
+    
+        fetchUserDataButton.addEventListener("click", async function() {
+            const apiUrls = [
+                "https://api.github.com/users/mojombo",
+                "https://api.github.com/users/defunkt",
+                "https://api.github.com/users/pjhyett",
+                "https://api.github.com/users/wycats"
+            ]; // List of GitHub API links for user data
+    
+            userDataContainer.innerHTML = ""; // Clear previous data
+    
+            const userDataPromises = apiUrls.map(apiUrl => fetchUserData(apiUrl));
+    
+            try {
+                const usersData = await Promise.all(userDataPromises);
+                usersData.forEach(userData => displayUserData(userData));
+            } catch (error) {
+                console.error("Error fetching users data:", error);
+            }
+        });
+    
+        async function fetchUserData(apiUrl) {
+            const response = await fetch(apiUrl);
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const userData = await response.json();
+            return userData;
+        }
+    
+        function displayUserData(userData) {
+            const userDiv = document.createElement("div");
+            userDiv.innerHTML = `
+                <h2>${userData.login}</h2>
+                <img src="${userData.avatar_url}" alt="User Avatar">
+                <p><a href="${userData.html_url}" target="_blank">GitHub Profile</a></p>
+            `;
+            userDataContainer.appendChild(userDiv);
+        }
+    });
+    </script>
+
+
+    
+</body>
+</html>
+
+
