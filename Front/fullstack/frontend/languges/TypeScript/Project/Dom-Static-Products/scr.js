@@ -16,6 +16,7 @@ function displayProducts(){
         let image=document.createElement('img')
         image.src=item.image
         image.style.width="200px"
+        image.style.margin="70px"
         div.appendChild(image)
     })
 }
