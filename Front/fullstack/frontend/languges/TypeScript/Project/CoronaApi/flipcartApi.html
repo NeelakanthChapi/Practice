@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -41,4 +41,58 @@
 
 
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="root"></div>
+    
+    <button onclick="apicaller()">onclick</button>
+    <script>
+        async function apicaller()
+        {
+            let div=document.getElementById("root")
+            
+            let apiData=fetch("https://fakestoreapi.com/products");
+            apiData=await(await apiData).json();
+            console.log(apiData)
+            apiData.map((item)=>{
+            
+
+                let img=document.createElement('img');
+                img.src=item.image;
+                img.style.width="250px"
+                
+                let h1=document.createElement('h1');
+                let h2=document.createElement('h2');
+                let h3=document.createElement('h3');
+             
+                
+               img.innerHTML=img;
+               h1.innerHTML=`title : ${item.title}`;
+               h2.innerHTML=`description : ${item.description}`;
+               
+                h3.innerHTML=`category:${item.category}`;
+
+               // h4.innerHTML=`image:${item.img}`;
+                h2.innerHTML=`price:${item.price}`;
+                div.appendChild(img);
+                div.appendChild(h3);
+                div.appendChild(h2);
+                //div.appendChild(h4);
+            })
+            
+            console.log(apiData);
+        }
+    </script>
+    
+</body>
+</html>
+</body>
 </html>
