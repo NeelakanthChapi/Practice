@@ -1,0 +1,15 @@
+{
+  "name": "e-mail-sender",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Sendmail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PRactice",
+  "license": "ISC",
+  "dependencies": {
+    "base64-encode-file": "^1.0.7",
+    "nodemailer": "^6.9.4"
+  }
+}
