@@ -1,0 +1,54 @@
+<h1>Promise</h1>
+<p><b>What is promise:-</b>In javascript promise is a good way to handle async operation,
+<br>It is used to findout if the async operation is successfuly completed or not.
+<br>May have 3 States:-
+<ul>
+    <li>Pending State</li>
+    <li>Fulfilled</li>
+    <li>Rejected</li>
+</ul>
+</p>
+<p>A promise starts in a pending state that means process is not complte.If the process ends in fulfill state.
+    <br>And if an error occurs,the process ends in Rejected state.
+<br>For example,when you request data from the server by using promise,it will be in a pending state.
+<br>When DATA arrives successfully it will be in fulfill state.if an error occurs it will be in rejected state.
+</p>
+
+
+
+
+
+
+
+
+<script>
+// let tejuPromiss=new Promise((amrutha,schana)=>{
+//     setTimeout(()=>{
+//          amrutha('peoople evey one come finnaly amith sold kidny')
+//     //schana('i told she will not give party ')
+//     },2000)
+   
+// })
+
+// console.log(tejuPromiss)
+// tejuPromiss.then((a)=>{console.log("ambrutha",a)})
+// tejuPromiss.catch((a)=>{console.log("sajana",a)})
+
+let p1=250
+ 
+let p2 =new Promise((res,not)=>{
+    setTimeout(()=>{
+        res(250)
+},2000)
+
+ })
+
+let p3=250
+
+p2.then((per2)=>{
+    let total=p1+per2+p3
+console.log(total)
+})
+   
+
+</script>
