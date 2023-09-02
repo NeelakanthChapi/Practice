@@ -1,6 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import { myLessonsList } from "./lessons.routes";
+import { myEntryPointList } from "./entrypoint.routes";
 
 export default function MyRoutes(){
-    return useRoutes([myLessonsList])
+    return useRoutes([myLessonsList,myEntryPointList])
 }

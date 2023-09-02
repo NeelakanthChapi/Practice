@@ -12,6 +12,7 @@ import { MyTooltip } from '../tooltit/MyTooltip.com';
 import { MyTextield } from '../textfield/MyTextield.com';
 import { MyFragment } from '../fragment/MyFragment.com';
 import { MyUseStateHook } from '../hooks/MyUseStateHook.com';
+import { MyUseEffect } from '../hooks/MyUseEffect.com';
 import { MyAvtar } from '../avtar/MyAvtar.com';
 export let MyTabs: React.FC<{}> = () => {
   const [value, setValue] = React.useState('1');
@@ -38,7 +39,7 @@ export let MyTabs: React.FC<{}> = () => {
         <TabPanel value="2"><H1 /></TabPanel>
         <TabPanel value="3"><MyButton /> <MyRatings /> <MyTextield /><MyAvtar/></TabPanel>
         <TabPanel value="4"> <MyFragment /></TabPanel>
-        <TabPanel value="5"><h1>hookes</h1><p>Hooks allow function components to have access to state and other React features</p><MyUseStateHook/></TabPanel>
+        <TabPanel value="5"><h1>hookes</h1><p>Hooks allow function components to have access to state and other React features</p><MyUseStateHook/><MyUseEffect/></TabPanel>
 
       </TabContext>
     </Box>
