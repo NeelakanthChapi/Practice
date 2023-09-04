@@ -14,6 +14,7 @@ import { MyFragment } from '../fragment/MyFragment.com';
 import { MyUseStateHook } from '../hooks/MyUseStateHook.com';
 import { MyUseEffect } from '../hooks/MyUseEffect.com';
 import { MyAvtar } from '../avtar/MyAvtar.com';
+import { TwowaysofCss } from '../2wysofcss/TwowaysofCss.com';
 export let MyTabs: React.FC<{}> = () => {
   const [value, setValue] = React.useState('1');
 
@@ -32,6 +33,7 @@ export let MyTabs: React.FC<{}> = () => {
             <Tab label="Mui elements" value="3" />
             <Tab label="fragment" value="4" />
             <Tab label="hooks" value="5" />
+            <Tab label="TwowaysofCss" value="6" />
 
           </TabList>
         </Box>
@@ -40,6 +42,7 @@ export let MyTabs: React.FC<{}> = () => {
         <TabPanel value="3"><MyButton /> <MyRatings /> <MyTextield /><MyAvtar/></TabPanel>
         <TabPanel value="4"> <MyFragment /></TabPanel>
         <TabPanel value="5"><h1>hookes</h1><p>Hooks allow function components to have access to state and other React features</p><MyUseStateHook/><MyUseEffect/></TabPanel>
+         <TabPanel value="6"><h1>TwowaysofCss</h1><TwowaysofCss></TwowaysofCss></TabPanel>
 
       </TabContext>
     </Box>

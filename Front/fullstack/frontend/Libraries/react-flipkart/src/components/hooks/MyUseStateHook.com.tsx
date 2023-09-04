@@ -7,7 +7,7 @@ export const MyUseStateHook:React.FC<{}>=()=>{
     let handleclick=()=>{
        
        setCount(count++)
-    //    console.log(count)
+       console.log(count)
     }
     return <>
     
