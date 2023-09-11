@@ -13,10 +13,15 @@ export const Entrypoint:React.FC<{}>=()=>{
   alignItems="center"
 >
     <Link to="/lessons/lesssons">
-<Button>lesons</Button></Link>
+<Button>lessons</Button></Link>
 <Link to='/project/login'>
 <Button>Projects</Button>
 </Link>
+
+<Link to='/contact/contact'>
+<Button>Contact Form</Button>
+</Link>
+
             
 </Grid>
 
